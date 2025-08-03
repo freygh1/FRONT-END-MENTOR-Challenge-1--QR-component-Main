@@ -1,15 +1,67 @@
 :root {
-  --main-color: #D5E1EF;
-
+  --main-color: hsl(212, 45%, 89%);
+  --secondary-color: hsl(0, 0%, 100%);
 }
+
+/* @font-face {
+  font-family: Outfit;
+  src: url();
+} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Outfit;
 }
 
 body {
   height: 100vh;
   background: var(--main-color);
+  display: grid;
+  place-items: center;
+}
+
+.component {
+  max-width: 320px;
+  min-height: 499px;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  box-shadow: ;
+}
+
+.flex,
+.text-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  margin: 0 32px;
+}
+
+.img-ctn {
+  padding: 16px 16px 24px 16px;
+}
+
+.img-ctn img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-ctn {
+  text-align: center;
+}
+
+.text-ctn h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.text-ctn p {
+  font-weight: 400;
+  font-size: 15px;
 }
