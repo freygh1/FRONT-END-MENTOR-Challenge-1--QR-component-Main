@@ -1,0 +1,15 @@
+:root {
+  --main-color: #D5E1EF;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--main-color);
+}
